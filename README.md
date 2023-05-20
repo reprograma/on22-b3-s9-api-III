@@ -1,80 +1,53 @@
-<h1 align="center">
-  <img src="assets/reprograma-fundos-claros.png" alt="logo reprograma" width="500">
-</h1>
+# Introdução à API: PUT + PATCH + DELETE
 
-# Tema da Aula
-
-Turma Online 22 - B3 | Back-end | Semana X | 2023 | Professora X
+Turma Online 22 - Todas em Tech | Back-end | Semana 9 | 2023 | Professora Gaia Maria
 
 ### Instruções
-Antes de começar, vamos organizar nosso setup.
-* Fork esse repositório 
-* Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
-* Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
-* [Add outras intrucoes caso necessario]
+
+- Fork esse repositório
+- Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
+- Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
 
 ### Resumo
-O que veremos na aula de hoje?
-* [Tema1](#tema1)
-* [Tema2](#tema2)
-* [Tema3](#tema3)
 
-## Conteúdo
-### Tema1 
-1. [Tópico 1](#topico1)
-2. [Tópico 2](#topico2)
-### Tema2 
-1. [Tópico 3](#topico3)
-   * [Subtópico 1](#subtopico1)
-   * [Subtópico 2](#subtopico2)
-   
-### Tema3
-1. [Tópico 4](#topico4)
+- **PROTOCOLOS HTTP:**  O Protocolo de Transferência de Hipertexto é um serviço utilizado dentro do modelo Client/Server e é baseado em requisições (requests) e respostas (responses). Qualquer servidor que você escolha para hospedar um site tem um programa projetado para receber solicitações HTTP. Portanto, o navegador que você usa é um cliente HTTP que envia solicitações constantemente ao seu servidor.
+*****  
+- **VERBOS HTTP:** São um conjunto de métodos de requisição responsáveis por indicar uma ação a ser executada. O Client envia um request solicitando um dos verbos e o Server responde com um response. São eles: GET, POST, PATCH, PUT E DELETE.
+*****  
+- **STATUS CODE - HTTP:** Os códigos de status das respostas HTTP indicam se uma requisição HTTP foi concluída. É a pessoa desenvolvedora  que adiciona na construção do servidor quais serão os casos referentes a cada resposta.
+*****  
+- **CRUD:** CRUD é a composição da primeira letra de quatro operações básicas de um banco de dados. Elas são o que a maioria das aplicações fazem.
+   - C: Create (criar) - criar um novo registro  
+   - R: Read (ler) - exibir as informações de um registro  
+   - U: Update (atualizar) - atualizar os dados do registro  
+   - D: Delete (apagar) - apagar um registro  
+    
+*****  
 
-### Tema1 
+- **API:** Uma API busca construir formas/ferramentas para se utilizar uma certa funcionalidade ou uma informação sem ter que ''reinventar'' algo novo. Ela não precisa estar somente em um link na Internet, Mas também, pode ser uma lib ou um framework, uma função já pronta em uma linguagem.
+  - *API RESTFUL:*  Uma API REST ou RESTful, é uma interface de programação de aplicações (API ou API web). Permitem a criação de um projeto com interfaces bem definidas. permitindo, que aplicações se comuniquem.
+  REST é a sigla em inglês para "Representational State Transfer", que em português significa tansferência de estado representacional.
+ *****  
 
-#### Topico1
+### Exercícios - PARA CASA
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
+- Crie seu servidor e uma rota padrão
+- Realize as importações e requisições necessarias  
+- Crie um rota  **GET** que liste todos os filmes Ghibli;
 
- #### Topico2
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  - Donec erat mauris, laoreet in tortor vel
-  - Nunc ante massa, dictum eget justo eget, feugiat tincidunt.
+- Crie rotas **GET** que possibilite buscar filme pelo título, id e pelo diretor;
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit.
+- Devo conseguir cadastrar novos filme com uma rota **POST**
 
-### Tema2
-#### Topico3
-* [Subtópico 1](#subtopico1)
-* [Subtópico 2](#Subtopico2)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+### Material da aula
 
-##### Subtopico1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-
-##### Subtopico2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-
-### Tema3
-#### Topico4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices.
-
-***
-### Exercícios 
-* [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
-* [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
-
-### Material da aula 
+APRESENTAÇÃO DISPONÍVEL [AQUI](https://www.canva.com/design/DAFONFwR5N0/29J6g1CbcQCThtZnKNOyUA/edit?utm_content=DAFONFwR5N0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### Links Úteis
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-
-
-<p align="center">
-Desenvolvido com :purple_heart:  
-</p>
-
+- [POSTMAN](https://www.postman.com/)
+- [Basico sobre http](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Basics_of_HTTP)
+- [Requisições HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Messages#requisi%C3%A7%C3%B5es_http)
+- [REST API](https://becode.com.br/o-que-e-api-rest-e-restful/)
+- [Express JS](https://expressjs.com/pt-br/)
+- [Entendendo map, filter, some, find e reduce do JavaScript Com Pokemons](https://medium.com/@mathiasghenoazzolini/entendendo-map-filter-some-find-e-reduce-do-javascript-com-pokemons-e4884551817b)
+- [Quatro métodos de pesquisa através de arrays em JavaScript](https://www.digitalocean.com/community/tutorials/js-array-search-methods-pt)
