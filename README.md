@@ -41,7 +41,7 @@ Turma Online 22 - Todas em Tech | Back-end | Semana 9 | 2023 | Professora Gaia M
 
 ### Material da aula
 
-APRESENTAÇÃO DISPONÍVEL [AQUI](https://www.canva.com/design/DAFONFwR5N0/29J6g1CbcQCThtZnKNOyUA/edit?utm_content=DAFONFwR5N0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+APRESENTAÇÃO DISPONÍVEL [AQUI](https://www.canva.com/design/DAFinZcTFN0/ikeT_Gljyu_VhxMQ_oRVdA/edit?utm_content=DAFinZcTFN0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### Links Úteis
 - [POSTMAN](https://www.postman.com/)
