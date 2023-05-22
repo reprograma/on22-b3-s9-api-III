@@ -6,6 +6,6 @@ router.get('/catalogo', filmesController.getALL)
 router.put('/update/:id', filmesController.updateMovieByID)
 router.patch('/change/:id', filmesController.updateTitleByID)
 router.delete('/delete/:id', filmesController.deleteByID)
-router.delete('/delete/:title', filmesController.deleteByTitle)
+router.delete('/delete/:title', filmesController.deleteByTitle);
 
 module.exports = router
