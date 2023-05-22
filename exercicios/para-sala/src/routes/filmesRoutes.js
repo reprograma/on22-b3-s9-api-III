@@ -20,6 +20,6 @@ module.exports = router;
  * n1: server.js
  * n2: app.js
  * n3: models => qaundo utilizar bancos de dados
- * n4: eoutes => difinir rotas pode ajudar na logica depois
+ * n4: routes => difinir rotas pode ajudar na logica depois
  * n5: controllles => minha logica de programaçao das rotas
  */
