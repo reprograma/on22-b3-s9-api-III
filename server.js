@@ -1,5 +1,5 @@
 const app = require("./exercicios/para-casa/app") // Importando o arquivo app
-const PORT = 433 // Porta
+const PORT = 433
 
 // Iniciando o servidor
 app.listen(PORT, () => {

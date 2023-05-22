@@ -2,7 +2,7 @@ const express = require("express") // Importando o Express
 const app = express() // Inicializando o Express
 app.use(express.json()) // Usando o middleware nativo do Express para fazer o parse em JSON
 
-const filmesRoutes = require('./src/router/filmesRoutes')
+const filmesRoutes = require('../para-casa/src/router/routes')
 
 app.use('/filmes', filmesRoutes) // Montando as rotas de filmes sob o prefixo /filmes
 

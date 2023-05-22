@@ -2,9 +2,9 @@
 
 ## Nome do Exercicio
 
-- Eu quero uma rota patch que altere o campo director.
-- Eu quero uma rota patch que altere o running_time.
-- Eu quero uma rota put update description.
+- xEu quero uma rota patch que altere o campo director.
+- xEu quero uma rota patch que altere o running_time.
+- xEu quero uma rota put update description.
 - Eu quero uma rota delete que exclua o filme pelo producer.
 - Eu quero uma rota get por Id.
 
