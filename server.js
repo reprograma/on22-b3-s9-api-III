@@ -1,7 +1,8 @@
-const app = require("./exercicios/para-casa/app") // Importando o arquivo app
+// Imports /////////////////////////////////////////////////////
+const app = require("./exercicios/para-casa/app")
 const PORT = 433
 
-// Iniciando o servidor
+// Server Config ///////////////////////////////////////////////
 app.listen(PORT, () => {
     console.log(`Listening to requests on port ${PORT}`)
 })

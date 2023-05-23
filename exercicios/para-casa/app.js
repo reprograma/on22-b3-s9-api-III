@@ -1,9 +1,11 @@
-const express = require("express") // Importando o Express
-const app = express() // Inicializando o Express
-app.use(express.json()) // Usando o middleware nativo do Express para fazer o parse em JSON
+// Imports /////////////////////////////////////////////////////
+const express = require("express")
+const filmesRoutes = require('./src/routers/routes')
 
-const filmesRoutes = require('../para-casa/src/router/routes')
+// App config //////////////////////////////////////////////////
+const app = express()
+app.use(express.json()) // I used the native Express middleware to parse to JSON
+app.use('/filmes', filmesRoutes)
 
-app.use('/filmes', filmesRoutes) // Montando as rotas de filmes sob o prefixo /filmes
-
-module.exports = app // Exportando o app para ser usado no server.js
+// Exports /////////////////////////////////////////////////////
+module.exports = app
