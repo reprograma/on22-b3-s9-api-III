@@ -12,5 +12,14 @@
   "dependencies": {
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinemach/on22-b3-s9-api-III.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/alinemach/on22-b3-s9-api-III/issues"
+  },
+  "homepage": "https://github.com/alinemach/on22-b3-s9-api-III#readme"
 }
