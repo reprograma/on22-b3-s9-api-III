@@ -1,11 +1,11 @@
 // Imports /////////////////////////////////////////////////////
 const express = require("express")
-const filmesRoutes = require('./src/routers/routes')
+const app = express()
+const movieRoutes = require('./routers/routes')
 
 // App config //////////////////////////////////////////////////
-const app = express()
-app.use(express.json()) // I used the native Express middleware to parse to JSON
-app.use('/filmes', filmesRoutes)
+app.use(express.json())
+app.use('/movies', movieRoutes)
 
 // Exports /////////////////////////////////////////////////////
 module.exports = app

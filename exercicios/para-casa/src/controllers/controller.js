@@ -1,13 +1,16 @@
 // Imports /////////////////////////////////////////////////////
 const moviesData = require('../models/ghiblifilms.json')
+const fs = require('fs')
 const express = require('express')
 const app = express()
+app.use(express.json())
 
 // GET route to get all movies /////////////////////////////////
 const getALL = (req, res) => {
+    console.log(moviesData)
     res.status(200).json(
         [{
-            filmes: moviesData
+            moviesData
         }]
     )
 }
@@ -15,6 +18,7 @@ const getALL = (req, res) => {
 // GET route to get movie by ID ////////////////////////////////
 const getMovieByID = (req, res) => {
     const idRequest = req.params.id
+    console.log(idRequest)
     const foundMovie = moviesData.find(movie => movie.id === idRequest)
 
     // Movie with the specified ID not found 
@@ -37,10 +41,9 @@ const getMovieByID = (req, res) => {
 // PUT route to update movie by ID /////////////////////////////
 const updateMovieByID = (req, res) => {
     const idRequest = req.params.id
-    const movieRequest = req.body
+    const updatedMovie = req.body
     const foundMovie = moviesData.findIndex(movie => movie.id === idRequest)
 
-    // Movie with the specified ID not found
     if (foundMovie === -1) {
         return res.status(404).json(
             [{
@@ -49,12 +52,12 @@ const updateMovieByID = (req, res) => {
         )
     }
 
-    moviesData.splice(foundMovie, 1, movieRequest)
+    moviesData.splice(foundMovie, 1, updatedMovie)
 
     res.status(200).json(
         [{
-            message: 'Movie updated!',
-            moviesData
+            message: `'${updatedMovie.title}' updated!`,
+            updatedMovie
         }]
     )
 }
@@ -67,18 +70,18 @@ const updateDescriptionByID = (req, res) => {
 
     // Movie with the specified ID not found
     if (foundMovie === -1) {
-      return res.status(404).json(
+        return res.status(404).json(
             [{
                 message: 'Movie not found'
             }]
         )
     }
-  
+
     moviesData[foundMovie].description = descriptionRequest
-  
+
     res.status(200).json([
         {
-            message: 'Description updated!',
+            message: `${foundMovie}'s description updated!`,
             moviesData
         }
     ])
@@ -103,7 +106,7 @@ const updateTitleByID = (req, res) => {
 
     res.status(200).json(
         [{
-            message: 'Title updated!',
+            message: `${foundMovie}'s title updated!`,
             moviesData
         }]
     )
@@ -128,7 +131,7 @@ const updateDirectorByID = (req, res) => {
 
     res.status(200).json(
         [{
-            message: 'Director updated!',
+            message: `${foundMovie}'s director updated!`,
             moviesData
         }]
     )
@@ -153,7 +156,7 @@ const updateRunningTimeByID = (req, res) => {
 
     res.status(200).json(
         [{
-            message: 'Running time updated!',
+            message: `${foundMovie}'s running time updated!`,
             moviesData
         }]
     )
@@ -178,7 +181,7 @@ const deleteByID = (req, res) => {
     res.status(200).json(
         [{
             message: 'Movie deleted!',
-            deleted: deletedMovie,
+            deleted: deletedMovie.title,
             moviesData
         }]
     )
@@ -203,7 +206,7 @@ const deleteByTitle = (req, res) => {
     res.status(200).json(
         [{
             message: 'Movie deleted!',
-            deleted: deletedMovie,
+            deleted: deletedMovie.title,
             moviesData
         }]
     )
@@ -217,8 +220,8 @@ const deleteByProducer = (req, res) => {
 
     res.status(200).json(
         [{
-            message: 'Movie deleted!',
-            deleted: deletedMovie,
+            message: 'Movie(s) deleted!',
+            deleted: deletedMovie.title,
             moviesData
         }]
     )

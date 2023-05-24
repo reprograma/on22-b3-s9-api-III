@@ -1,5 +1,5 @@
 // Imports /////////////////////////////////////////////////////
-const app = require("./exercicios/para-casa/app")
+const app = require("./exercicios/para-casa/src/app")
 const PORT = 433
 
 // Server Config ///////////////////////////////////////////////
