@@ -1,6 +1,6 @@
-const app = require("./exercicios/para-sala/src/app") //chamando o arquivo app
+const app = require("./exercicios/para-casa/src/app")
 
-const PORT = 1313 //PORTA
+const PORT = 1109
 
 //iniciando o servidor
 app.listen(PORT , ()=>{

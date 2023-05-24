@@ -2,10 +2,12 @@
 
 ## Nome do Exercicio
 
-- Explicação do exercício: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
----
+- Criar uma rota PATCH que altere o campo "director",
+- Criar uma rota PATCH que altere o campo "running_time",
+- Criar uma rota PUT (lembrar que também precisa do ID) update description, que altere a descrição
+- Criar uma rota DELETE que exclua o filme pelo campo "producer",
+- Criar uma rota GET pelo ID.
+
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
 
