@@ -17,7 +17,19 @@ const updateDirectorById = (request, response) => {
     
     movie.director = newDirector
     response.status(200).json([{
-        'menssage': 'The director field has been updated',
+        'message': 'The director field has been updated',
+        movie
+    }])
+}
+
+const updateRunningTimeById = (request, response) => {
+    const idRequest = request.params.id
+    let newRunningTime  = request.body.running_time
+    let movie = FilmsJson.find(movie => movie.id == idRequest)
+
+    movie.running_time = newRunningTime
+    response.status(200).json([{
+        'message': 'The runtime has been updated',
         movie
     }])
 }
@@ -25,5 +37,6 @@ const updateDirectorById = (request, response) => {
 
 module.exports = {
     getAll,
-    updateDirectorById
+    updateDirectorById,
+    updateRunningTimeById
 }
