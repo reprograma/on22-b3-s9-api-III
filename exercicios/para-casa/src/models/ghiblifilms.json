@@ -1,4 +1,20 @@
-[
+[ 
+    {
+        "id": "1122334455",
+        "title": "bananita",
+        "description": "uma bananeira nasce de outra bananeira nova versão bananita",
+        "director":"show da luna",
+        "producer":"nickload",
+        "running_time": 35
+    },
+    {
+        "id": "123456789",
+        "title": "banana",
+        "description": "uma bananeira nasce de outra bananeira",
+        "director":"show da luana",
+        "producer":"nick",
+        "running_time": 25
+    },
     {
         "id": "ade9a694-b7ec-4af9-a536-389c57c865b2",
         "title": "Nausicaä do Vale do Vento",
