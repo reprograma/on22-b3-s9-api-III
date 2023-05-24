@@ -1,8 +1,8 @@
-const app = require("./exercicios/para-sala/src/app") //chamando o arquivo app
+// Imports /////////////////////////////////////////////////////
+const app = require("./exercicios/para-casa/src/app")
+const PORT = 433
 
-const PORT = 1313 //PORTA
-
-//iniciando o servidor
-app.listen(PORT , ()=>{
-    console.log(`To rodando na porta ${PORT}`)
-}) 
+// Server Config ///////////////////////////////////////////////
+app.listen(PORT, () => {
+    console.log(`Listening to requests on port ${PORT}`)
+})
