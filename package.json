@@ -1,14 +1,23 @@
 {
   "name": "on22-b3-s9-api-iii",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">\r   <img src=\"assets/reprograma-fundos-claros.png\" alt=\"logo reprograma\" width=\"500\">\r </h1>",
+  "description": "Turma Online 22 - Todas em Tech | Back-end | Semana 9 | 2023 | Professora Gaia Maria",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reprograma/on22-b3-s9-api-III.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reprograma/on22-b3-s9-api-III/issues"
+  },
+  "homepage": "https://github.com/reprograma/on22-b3-s9-api-III#readme",
   "dependencies": {
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
