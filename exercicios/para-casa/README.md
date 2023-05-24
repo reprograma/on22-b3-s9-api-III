@@ -3,7 +3,7 @@
 - Criar uma rota PATCH que altere o campo "director", ok
 - Criar uma rota PATCH que altere o campo "running_time", ok
 - Criar uma rota PUT (lembrar que também precisa do ID) update description, que altere a descrição ok
-- Criar uma rota DELETE que exclua o filme pelo campo "producer",
+- Criar uma rota DELETE que exclua o filme pelo campo "id", ok
 - Criar uma rota GET pelo ID.
 
 
