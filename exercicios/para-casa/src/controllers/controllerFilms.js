@@ -48,13 +48,23 @@ const updateDescriptionById = (request, response) => {
 
 const deleteMovieById = (request, response) => {
     const id = request.params.id
-    const movie = FilmsJson.find(movie => movie.id == id)
+    let movie = FilmsJson.find(movie => movie.id == id)
     FilmsJson.splice(movie, 1)
 
     response.status(200).json([{
         'message': 'Deleted Movie',
         'Deleted': id,
         FilmsJson
+    }])
+}
+
+const getFilmsById = (request, response) => {
+    const id = request.params.id
+    let movie = FilmsJson.find(movie => movie.id == id)
+    console.log(movie)
+    response.status(200).json([{
+        'message': 'tudo ok',
+        movie
     }])
 }
 
@@ -65,5 +75,6 @@ module.exports = {
     changeDirectorById,
     changeRunningTimeById,
     updateDescriptionById,
-    deleteMovieById
+    deleteMovieById,
+    getFilmsById
 }
