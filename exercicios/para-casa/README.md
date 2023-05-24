@@ -6,7 +6,7 @@
 - Eu quero uma rota patch que altere running_time. [ok]
 - Eu quero uma rota put update description.[ok]
 - Eu quero uma rota delete que exclua o filme pelo producer.[ok]
-- Eu quero uma rota de Get by Id.
+- Eu quero uma rota de Get by Id.[ok]
 
 
 
