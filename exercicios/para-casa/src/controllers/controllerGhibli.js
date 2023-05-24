@@ -22,13 +22,13 @@ const filmByID = (request, response) => {
 //Declaro minha constante de atualização do filme por descrição: PUT
 const updateDescriptionByID = (request, response) => {
   const idRequest = request.params.id
-  let newDescription = request.body.description
-  let filmeEncontrado = filmesGhibli.find(film => film.id == idRequest)
-  filmeEncontrado.description = newDescription
+  let filmRequest = request.body
+  let filmeEncontrado = filmesGhibli.findIndex(film => film.id == idRequest)
+  filmesGhibli.splice(filmeEncontrado, 1, filmRequest)
 
   response.status(200).json([{
     message: "updated film description by ID",
-    filmeEncontrado
+    filmesGhibli
   }])
 }
 
@@ -52,7 +52,10 @@ const updateFilmByDirector = (request, response) => {
     let filmeEncontrado = filmesGhibli.find(film => film.id == idRequest)
     
     filmeEncontrado.running_time = newRunningTime
-    response.status(200).json(filmeEncontrado)
+    response.status(200).json([{
+        "message": "updated movie by running time",
+        filmeEncontrado
+    }])
 }
 
 //Declaro minha constante para deletar o filme por produtor: DELETE
