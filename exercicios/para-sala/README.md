@@ -11,7 +11,7 @@ Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo cert
 
 - [v] Fiz o fork do repositório.
 - [v] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
-- [ ] Resolvi o exercício.
+- [v] Resolvi o exercício.
 - [v] Adicionei as mudanças. (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
 - [v] Commitei a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
 - [v] Pushei os commits na minha branch (`git push origin nome-da-branch`)
