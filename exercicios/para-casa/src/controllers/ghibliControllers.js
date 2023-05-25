@@ -14,7 +14,6 @@ const ghibliFilmById = (req, res) => {
 }
 
 // const updateDirectorById = (req, res) => {
-
 // }
 
 
