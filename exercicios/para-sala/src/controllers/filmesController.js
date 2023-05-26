@@ -38,24 +38,24 @@ const updateTitleByID = (req, res) => {
 
 const deleteMovieByID = (req, res) => {
     const IdRequest = req.params.id
-    const deleteMovie = filmesJson.findIndex(movie => movie.id == IdRequest)
-    filmesJson.splice(deleteMovie, 1)
+    const movieIndex = filmesJson.findIndex(movie => movie.id == IdRequest)
+    const deletedMovie = filmesJson.splice(movieIndex, 1)
 
-    res.status(200).json([{
+    res.status(200).json({
         'message': 'Deleted Movie',
         'Deleted': IdRequest,
-        filmesJson
-    }])
+        deletedMovie
+    })
 }
 
 const deleteMovieByTitle = (req, res) => {
     const IdRequest = req.params.title.toLowerCase()
-    const deleteMovie = filmesJson.findIndex(movie => movie.title.toLocaleLowerCase() == IdRequest)
-    filmesJson.splice(deleteMovie, 1)
+    const movieIndex = filmesJson.findIndex(movie => movie.title.toLocaleLowerCase() == IdRequest)
+    filmesJson.splice(movieIndex, 1)
 
     res.status(200).json([{
         'menssage': 'Deleted movie by title',
-        'Deleted': IdRequest,
+        'Deleted': IdRequestmovieIndex,
         filmesJson
     }])
 

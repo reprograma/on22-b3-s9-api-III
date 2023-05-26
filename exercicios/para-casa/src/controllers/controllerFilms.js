@@ -53,8 +53,7 @@ const deleteMovieById = (request, response) => {
 
     response.status(200).json([{
         'message': 'Deleted Movie',
-        'Deleted': id,
-        FilmsJson
+        'Deleted': id
     }])
 }
 
