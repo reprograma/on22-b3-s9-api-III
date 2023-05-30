@@ -1,11 +1,13 @@
-# Exercício de Casa 🏠 
+# Exercício de Casa 🏠
 
 ## Nome do Exercicio
 
-- Explicação do exercício: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
----
+- Construa a Arquitetura MVC: os arquivos e pastas como no para-sala;
+- Eu quero uma rota Patch, que altere o campo director;
+- Eu quero uma rota Patch, que altere a running_time (tem que trabalhar com number);
+- Eu quero uma rota PUT update descriptor;(tbm precisa do id e pode alterar o que quiser, manter o id!!)
+- Eu quero uma rota delete que exclua pelo producer;
+- Eu quero uma rota GETBy ID;
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
 
