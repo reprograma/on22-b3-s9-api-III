@@ -1,5 +1,12 @@
 # Exercício de Casa 🏠 
 
+- Eu quero uma rota patch que altere o campo director.
+- Eu quero uma rota patch que altere running_time.
+- Eu quero uma rota put.
+- Eu quero uma rota delete que exclua o filme pelo producer.
+- Eu quero uma rota de Get by Id.
+- Eu quero uma rota de Get by Id. 
+
 ## Nome do Exercicio
 
 - Explicação do exercício: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
