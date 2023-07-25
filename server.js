@@ -4,5 +4,5 @@ const PORT = 1313 //PORTA
 
 //iniciando o servidor
 app.listen(PORT , ()=>{
-    console.log(`To rodando na porta ${PORT}`)
+    console.log(`To rodando na porta ${PORT}`) // estou rodando nessa porta
 }) 
